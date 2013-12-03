@@ -1,9 +1,8 @@
 ﻿var targetPosition : Vector3;
-var targetRotation : Quaternion;
+var targetRotate : float = 270;
  
 function OnTriggerEnter( other : Collider ) {
   other.transform.position = targetPosition;
-  other.transform.rotation = targetRotation;
-  
-  Physics.gravity = Vector3(0, -9.3, 0);
+  other.transform.Rotate(Vector3.forward, targetRotate);
+   
  }

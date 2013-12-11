@@ -49,6 +49,7 @@
      <Compile Include="Assets\NewBehaviourScript.js" />
      <Compile Include="Assets\gravity.js" />
      <Compile Include="Assets\teleport.js" />
+     <Compile Include="Assets\twist.js" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>

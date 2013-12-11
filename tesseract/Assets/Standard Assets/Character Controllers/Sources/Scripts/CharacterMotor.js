@@ -11,7 +11,6 @@ var useFixedUpdate : boolean = true;
 // Very handy for organization!
 
 // The current global direction we want the character to move in.
-@System.NonSerialized
 var inputMoveDirection : Vector3 = Vector3.zero;
 
 // Is the jump button held down? We use this interface instead of checking

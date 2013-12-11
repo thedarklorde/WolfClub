@@ -2,39 +2,47 @@
 private var rotated : boolean = false;
 private var worldTrans: Transform;
 private var targetpos : Vector3;
+private var camTrans : Transform;
 
-enum Direction {right, left, forward, back};
-var target : Transform;
-var TargetRotate : float = 90;
+enum Direction {right, left, forward, back, up, none};
 var SpinDirection : Direction;
 
+var target : Transform;
+
 function Awake () {
-  worldTrans = transform.parent.parent;
+	worldTrans = transform.root;
+	Debug.Log(worldTrans);
+	camTrans = GameObject.FindWithTag("MainCamera").transform;
+	Debug.Log(camTrans);
  }
 
 function OnTriggerEnter( other : Collider ) {
-  Debug.Log(transform);
-  for (var room : Transform in worldTrans) {
-    switch ( SpinDirection ) {
-      case 0:
-        Debug.Log("Direction: right");
-        room.Rotate (Vector3.right, TargetRotate);
-        break;
-      case 1:
-        Debug.Log("Direction: left");
-        room.Rotate (Vector3.left, TargetRotate);
-        break;
-      case 2:
-        Debug.Log("Direction: forward");
-        room.Rotate (Vector3.forward, TargetRotate);
-        break;
-      case 3:
-        Debug.Log("Direction: back");
-        room.Rotate (Vector3.back, TargetRotate);
-        break;
-      default:
-        Debug.Log ("No direction choice");
-     }
-   }
-  other.transform.position = target.position;
+	switch ( SpinDirection ) {
+	case Direction.right:
+		Debug.Log("Direction: right");
+		worldTrans.Rotate (Vector3.right, 90);
+		break;
+	case Direction.left:
+		Debug.Log("Direction: left");
+		worldTrans.Rotate (Vector3.left, 90);
+		break;
+	case Direction.forward:
+		Debug.Log("Direction: forward");
+		worldTrans.Rotate (Vector3.forward, 90);
+		break;
+	case Direction.back:
+		Debug.Log("Direction: back");
+		worldTrans.Rotate (Vector3.back, 90);
+		break;
+	case Direction.up:
+		Debug.Log("Direction: upside down");
+		worldTrans.Rotate (Vector3.forward, 180);
+		break;
+	case Direction.none:
+		Debug.Log("Direction: none");
+		break;
+	default:
+		Debug.Log ("No direction choice");
+	}
+	other.transform.position = target.position;
  }

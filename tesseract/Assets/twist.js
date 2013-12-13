@@ -14,11 +14,11 @@ function OnTriggerEnter( other : Collider ) {
 	switch ( SpinDirection ) {
 	case Direction.right:
 		Debug.Log("Direction: right");
-		other.transform.RotateAround (other.transform.position, other.transform.up, 90);
+		worldTrans.Rotate (Vector3.up, 90);
 		break;
 	case Direction.left:
 		Debug.Log("Direction: left");
-		other.transform.RotateAround (other.transform.position, other.transform.down, 90);
+		worldTrans.Rotate (Vector3.down, 90);
 		break;
 	case Direction.back:
 		Debug.Log("Direction: back");

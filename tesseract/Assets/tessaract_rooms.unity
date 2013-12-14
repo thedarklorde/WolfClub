@@ -86,7 +86,7 @@ GameObject:
   - 23: {fileID: 10041137}
   m_Layer: 0
   m_Name: pad1b
-  m_TagString: Untagged
+  m_TagString: Room1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,7 +98,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 10041135}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 796221307}
@@ -142,7 +142,7 @@ GameObject:
   - 23: {fileID: 10772349}
   m_Layer: 0
   m_Name: pad2g
-  m_TagString: Untagged
+  m_TagString: Room2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -154,7 +154,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 10772347}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 460237747}
@@ -254,7 +254,7 @@ GameObject:
   - 23: {fileID: 36499175}
   m_Layer: 0
   m_Name: pad6f
-  m_TagString: Untagged
+  m_TagString: Room6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -310,7 +310,7 @@ GameObject:
   - 23: {fileID: 50095071}
   m_Layer: 0
   m_Name: pad6h
-  m_TagString: Untagged
+  m_TagString: Room6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -366,7 +366,7 @@ GameObject:
   - 23: {fileID: 56814340}
   m_Layer: 0
   m_Name: pad6a
-  m_TagString: Untagged
+  m_TagString: Room6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -422,7 +422,7 @@ GameObject:
   - 23: {fileID: 57786544}
   m_Layer: 0
   m_Name: pad8b
-  m_TagString: Untagged
+  m_TagString: Room8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -478,7 +478,7 @@ GameObject:
   - 23: {fileID: 61623723}
   m_Layer: 0
   m_Name: pad7e
-  m_TagString: Untagged
+  m_TagString: Room7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -490,7 +490,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 61623721}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: -1, y: 0, z: 0}
+  m_LocalPosition: {x: -2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1804537826}
@@ -536,7 +536,7 @@ GameObject:
   - 114: {fileID: 82167305}
   m_Layer: 0
   m_Name: portal2d
-  m_TagString: Untagged
+  m_TagString: Room2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -561,9 +561,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 82167303}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpinDirection: 0
   target: {fileID: 57786543}
 --- !u!23 &82167306
 Renderer:
@@ -594,7 +595,7 @@ BoxCollider:
   m_GameObject: {fileID: 82167303}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -619,7 +620,7 @@ GameObject:
   - 114: {fileID: 82299398}
   m_Layer: 0
   m_Name: portal7d
-  m_TagString: Untagged
+  m_TagString: Room7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -644,10 +645,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 82299396}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1910996093}
+  SpinDirection: 0
+  target: {fileID: 0}
 --- !u!23 &82299399
 Renderer:
   m_ObjectHideFlags: 0
@@ -677,7 +679,7 @@ BoxCollider:
   m_GameObject: {fileID: 82299396}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -699,10 +701,9 @@ GameObject:
   - 33: {fileID: 83899995}
   - 65: {fileID: 83899994}
   - 23: {fileID: 83899993}
-  - 114: {fileID: 83899992}
   m_Layer: 0
   m_Name: portal8g
-  m_TagString: Untagged
+  m_TagString: Room8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -719,18 +720,6 @@ Transform:
   m_Children:
   - {fileID: 1390664211}
   m_Father: {fileID: 1957295889}
---- !u!114 &83899992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 83899990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!23 &83899993
 Renderer:
   m_ObjectHideFlags: 0
@@ -760,7 +749,7 @@ BoxCollider:
   m_GameObject: {fileID: 83899990}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -783,7 +772,7 @@ GameObject:
   - 64: {fileID: 119568536}
   m_Layer: 0
   m_Name: room 1
-  m_TagString: Untagged
+  m_TagString: Room1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -904,7 +893,7 @@ GameObject:
   - 23: {fileID: 133213684}
   m_Layer: 0
   m_Name: pad1f
-  m_TagString: Untagged
+  m_TagString: Room1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -916,7 +905,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 133213682}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 190067121}
@@ -960,7 +949,7 @@ GameObject:
   - 23: {fileID: 133745493}
   m_Layer: 0
   m_Name: pad3f
-  m_TagString: Untagged
+  m_TagString: Room3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1072,7 +1061,7 @@ GameObject:
   - 23: {fileID: 141300953}
   m_Layer: 0
   m_Name: pad6b
-  m_TagString: Untagged
+  m_TagString: Room6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1130,7 +1119,7 @@ GameObject:
   - 114: {fileID: 185531386}
   m_Layer: 0
   m_Name: portal5e
-  m_TagString: Untagged
+  m_TagString: Room5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1155,10 +1144,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 185531384}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1557978147}
+  SpinDirection: 3
+  target: {fileID: 1501468866}
 --- !u!23 &185531387
 Renderer:
   m_ObjectHideFlags: 0
@@ -1188,7 +1178,7 @@ BoxCollider:
   m_GameObject: {fileID: 185531384}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1210,10 +1200,9 @@ GameObject:
   - 33: {fileID: 190067125}
   - 65: {fileID: 190067124}
   - 23: {fileID: 190067123}
-  - 114: {fileID: 190067122}
   m_Layer: 0
   m_Name: portal1f
-  m_TagString: Untagged
+  m_TagString: Room1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1230,18 +1219,6 @@ Transform:
   m_Children:
   - {fileID: 133213683}
   m_Father: {fileID: 119568535}
---- !u!114 &190067122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 190067120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!23 &190067123
 Renderer:
   m_ObjectHideFlags: 0
@@ -1294,7 +1271,7 @@ GameObject:
   - 23: {fileID: 203482150}
   m_Layer: 0
   m_Name: pad4e
-  m_TagString: Untagged
+  m_TagString: Room4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1349,10 +1326,9 @@ GameObject:
   - 33: {fileID: 211001420}
   - 65: {fileID: 211001419}
   - 23: {fileID: 211001418}
-  - 114: {fileID: 211001417}
   m_Layer: 0
   m_Name: portal7f
-  m_TagString: Untagged
+  m_TagString: Room7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1369,18 +1345,6 @@ Transform:
   m_Children:
   - {fileID: 1049834064}
   m_Father: {fileID: 1964267858}
---- !u!114 &211001417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 211001415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 61623722}
 --- !u!23 &211001418
 Renderer:
   m_ObjectHideFlags: 0
@@ -1410,7 +1374,7 @@ BoxCollider:
   m_GameObject: {fileID: 211001415}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1433,7 +1397,7 @@ GameObject:
   - 23: {fileID: 229580642}
   m_Layer: 0
   m_Name: pad7g
-  m_TagString: Untagged
+  m_TagString: Room7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1445,7 +1409,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 229580640}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1253328379}
@@ -1491,7 +1455,7 @@ GameObject:
   - 114: {fileID: 257263884}
   m_Layer: 0
   m_Name: portal5a
-  m_TagString: Untagged
+  m_TagString: Room5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1516,9 +1480,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 257263882}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpinDirection: 0
   target: {fileID: 836483041}
 --- !u!23 &257263885
 Renderer:
@@ -1549,7 +1514,7 @@ BoxCollider:
   m_GameObject: {fileID: 257263882}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1574,7 +1539,7 @@ GameObject:
   - 114: {fileID: 275948056}
   m_Layer: 0
   m_Name: portal8c
-  m_TagString: Untagged
+  m_TagString: Room8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1599,7 +1564,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 275948054}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 079e6c01f3b61ff47b2b3a78f1fea0ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SpinDirection: 1
@@ -1610,7 +1575,7 @@ Renderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 275948054}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
@@ -1633,7 +1598,7 @@ BoxCollider:
   m_GameObject: {fileID: 275948054}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1767,10 +1732,9 @@ GameObject:
   - 33: {fileID: 286626520}
   - 65: {fileID: 286626519}
   - 23: {fileID: 286626518}
-  - 114: {fileID: 286626517}
   m_Layer: 0
   m_Name: portal1e
-  m_TagString: Untagged
+  m_TagString: Room1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1787,18 +1751,6 @@ Transform:
   m_Children:
   - {fileID: 1135324183}
   m_Father: {fileID: 119568535}
---- !u!114 &286626517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 286626515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!23 &286626518
 Renderer:
   m_ObjectHideFlags: 0
@@ -1850,7 +1802,7 @@ GameObject:
   - 95: {fileID: 288602748}
   m_Layer: 0
   m_Name: room 6
-  m_TagString: Untagged
+  m_TagString: Room6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1902,7 +1854,7 @@ GameObject:
   - 23: {fileID: 290536682}
   m_Layer: 0
   m_Name: pad7d
-  m_TagString: Untagged
+  m_TagString: Room7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1914,7 +1866,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 290536680}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: -1, y: 0, z: 0}
+  m_LocalPosition: {x: -2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 82299397}
@@ -1957,7 +1909,7 @@ GameObject:
   - 95: {fileID: 308321620}
   m_Layer: 0
   m_Name: room 3
-  m_TagString: Untagged
+  m_TagString: Room3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2044,7 +1996,7 @@ GameObject:
   - 23: {fileID: 322740190}
   m_Layer: 0
   m_Name: pad3e
-  m_TagString: Untagged
+  m_TagString: Room3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2100,7 +2052,7 @@ GameObject:
   - 23: {fileID: 364553248}
   m_Layer: 0
   m_Name: pad1d
-  m_TagString: Untagged
+  m_TagString: Room1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2112,7 +2064,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 364553246}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: -1, y: 0, z: 0}
+  m_LocalPosition: {x: -2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1713126618}
@@ -2158,7 +2110,7 @@ GameObject:
   - 114: {fileID: 376223552}
   m_Layer: 0
   m_Name: portal1c
-  m_TagString: Untagged
+  m_TagString: Room1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2171,9 +2123,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 376223551}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpinDirection: 3
   target: {fileID: 1501468866}
 --- !u!23 &376223553
 Renderer:
@@ -2241,7 +2194,7 @@ GameObject:
   - 114: {fileID: 379251769}
   m_Layer: 0
   m_Name: portal3c
-  m_TagString: Untagged
+  m_TagString: Room3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2266,9 +2219,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 379251767}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpinDirection: 0
   target: {fileID: 1514257397}
 --- !u!23 &379251770
 Renderer:
@@ -2299,7 +2253,7 @@ BoxCollider:
   m_GameObject: {fileID: 379251767}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -2324,7 +2278,7 @@ GameObject:
   - 114: {fileID: 425726897}
   m_Layer: 0
   m_Name: portal3b
-  m_TagString: Untagged
+  m_TagString: Room3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2347,9 +2301,9 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 425726895}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 079e6c01f3b61ff47b2b3a78f1fea0ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SpinDirection: 0
@@ -2383,7 +2337,7 @@ BoxCollider:
   m_GameObject: {fileID: 425726895}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -2406,7 +2360,7 @@ GameObject:
   - 23: {fileID: 447346937}
   m_Layer: 0
   m_Name: pad8d
-  m_TagString: Untagged
+  m_TagString: Room8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2464,7 +2418,7 @@ GameObject:
   - 114: {fileID: 449518123}
   m_Layer: 0
   m_Name: portal6a
-  m_TagString: Untagged
+  m_TagString: Room6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2489,9 +2443,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 449518121}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpinDirection: 0
   target: {fileID: 141300952}
 --- !u!23 &449518124
 Renderer:
@@ -2522,7 +2477,7 @@ BoxCollider:
   m_GameObject: {fileID: 449518121}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -2547,7 +2502,7 @@ GameObject:
   - 114: {fileID: 449819030}
   m_Layer: 0
   m_Name: portal5c
-  m_TagString: Untagged
+  m_TagString: Room5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2572,9 +2527,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 449819028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpinDirection: 0
   target: {fileID: 0}
 --- !u!23 &449819031
 Renderer:
@@ -2605,7 +2561,7 @@ BoxCollider:
   m_GameObject: {fileID: 449819028}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -2627,10 +2583,9 @@ GameObject:
   - 33: {fileID: 450116410}
   - 65: {fileID: 450116409}
   - 23: {fileID: 450116408}
-  - 114: {fileID: 450116407}
   m_Layer: 0
   m_Name: portal3g
-  m_TagString: Untagged
+  m_TagString: Room3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2647,18 +2602,6 @@ Transform:
   m_Children:
   - {fileID: 893160040}
   m_Father: {fileID: 308321619}
---- !u!114 &450116407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 450116405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!23 &450116408
 Renderer:
   m_ObjectHideFlags: 0
@@ -2688,7 +2631,7 @@ BoxCollider:
   m_GameObject: {fileID: 450116405}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -2710,10 +2653,9 @@ GameObject:
   - 33: {fileID: 460237751}
   - 65: {fileID: 460237750}
   - 23: {fileID: 460237749}
-  - 114: {fileID: 460237748}
   m_Layer: 0
   m_Name: portal2g
-  m_TagString: Untagged
+  m_TagString: Room2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2730,18 +2672,6 @@ Transform:
   m_Children:
   - {fileID: 10772348}
   m_Father: {fileID: 758963354}
---- !u!114 &460237748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 460237746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!23 &460237749
 Renderer:
   m_ObjectHideFlags: 0
@@ -2771,7 +2701,7 @@ BoxCollider:
   m_GameObject: {fileID: 460237746}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -2794,7 +2724,7 @@ GameObject:
   - 23: {fileID: 462242445}
   m_Layer: 0
   m_Name: pad4b
-  m_TagString: Untagged
+  m_TagString: Room4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2850,7 +2780,7 @@ GameObject:
   - 23: {fileID: 502465787}
   m_Layer: 0
   m_Name: pad1a
-  m_TagString: Untagged
+  m_TagString: Room1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2862,7 +2792,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 502465785}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: -1, y: 0, z: 0}
+  m_LocalPosition: {x: -2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1689488694}
@@ -2908,7 +2838,7 @@ GameObject:
   - 114: {fileID: 506349405}
   m_Layer: 0
   m_Name: portal2a
-  m_TagString: Untagged
+  m_TagString: Room2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2933,9 +2863,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 506349403}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpinDirection: 0
   target: {fileID: 1371277827}
 --- !u!23 &506349406
 Renderer:
@@ -2966,7 +2897,7 @@ BoxCollider:
   m_GameObject: {fileID: 506349403}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -2988,10 +2919,9 @@ GameObject:
   - 33: {fileID: 519970851}
   - 65: {fileID: 519970850}
   - 23: {fileID: 519970849}
-  - 114: {fileID: 519970848}
   m_Layer: 0
   m_Name: portal4g
-  m_TagString: Untagged
+  m_TagString: Room4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3008,18 +2938,6 @@ Transform:
   m_Children:
   - {fileID: 1590833157}
   m_Father: {fileID: 1345768958}
---- !u!114 &519970848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 519970846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!23 &519970849
 Renderer:
   m_ObjectHideFlags: 0
@@ -3049,7 +2967,7 @@ BoxCollider:
   m_GameObject: {fileID: 519970846}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -3074,7 +2992,7 @@ GameObject:
   - 108: {fileID: 524223899}
   m_Layer: 0
   m_Name: default3
-  m_TagString: Untagged
+  m_TagString: Room3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3182,7 +3100,7 @@ GameObject:
   - 114: {fileID: 549908831}
   m_Layer: 0
   m_Name: portal6c
-  m_TagString: Untagged
+  m_TagString: Room6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3207,9 +3125,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 549908829}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpinDirection: 0
   target: {fileID: 0}
 --- !u!23 &549908832
 Renderer:
@@ -3240,7 +3159,7 @@ BoxCollider:
   m_GameObject: {fileID: 549908829}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -3323,7 +3242,7 @@ GameObject:
   - 114: {fileID: 561879000}
   m_Layer: 0
   m_Name: portal3a
-  m_TagString: Untagged
+  m_TagString: Room3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3348,9 +3267,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 561878998}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpinDirection: 0
   target: {fileID: 669257058}
 --- !u!23 &561879001
 Renderer:
@@ -3381,7 +3301,7 @@ BoxCollider:
   m_GameObject: {fileID: 561878998}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -3404,7 +3324,7 @@ GameObject:
   - 23: {fileID: 566332018}
   m_Layer: 0
   m_Name: pad4d
-  m_TagString: Untagged
+  m_TagString: Room4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3459,10 +3379,9 @@ GameObject:
   - 33: {fileID: 611373320}
   - 65: {fileID: 611373319}
   - 23: {fileID: 611373318}
-  - 114: {fileID: 611373317}
   m_Layer: 0
   m_Name: portal8h
-  m_TagString: Untagged
+  m_TagString: Room8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3479,18 +3398,6 @@ Transform:
   m_Children:
   - {fileID: 1076592826}
   m_Father: {fileID: 1957295889}
---- !u!114 &611373317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 611373315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!23 &611373318
 Renderer:
   m_ObjectHideFlags: 0
@@ -3520,7 +3427,7 @@ BoxCollider:
   m_GameObject: {fileID: 611373315}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -3647,7 +3554,7 @@ GameObject:
   - 23: {fileID: 641597195}
   m_Layer: 0
   m_Name: pad8e
-  m_TagString: Untagged
+  m_TagString: Room8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3705,7 +3612,7 @@ GameObject:
   - 114: {fileID: 663734843}
   m_Layer: 0
   m_Name: portal4d
-  m_TagString: Untagged
+  m_TagString: Room4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3730,9 +3637,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 663734841}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpinDirection: 0
   target: {fileID: 0}
 --- !u!23 &663734844
 Renderer:
@@ -3763,7 +3671,7 @@ BoxCollider:
   m_GameObject: {fileID: 663734841}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -3788,7 +3696,7 @@ GameObject:
   - 114: {fileID: 668360871}
   m_Layer: 0
   m_Name: portal7c
-  m_TagString: Untagged
+  m_TagString: Room7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3813,7 +3721,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 668360869}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 079e6c01f3b61ff47b2b3a78f1fea0ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SpinDirection: 0
@@ -3847,7 +3755,7 @@ BoxCollider:
   m_GameObject: {fileID: 668360869}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -3870,7 +3778,7 @@ GameObject:
   - 23: {fileID: 669257059}
   m_Layer: 0
   m_Name: pad1c
-  m_TagString: Untagged
+  m_TagString: Room1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3882,7 +3790,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 669257057}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 376223556}
@@ -3926,7 +3834,6 @@ GameObject:
   - 114: {fileID: 672845365}
   - 114: {fileID: 672845364}
   - 114: {fileID: 672845363}
-  - 54: {fileID: 672845367}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -4050,21 +3957,6 @@ CharacterController:
   m_SkinWidth: .0500000007
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &672845367
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 672845361}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &677168072
 GameObject:
   m_ObjectHideFlags: 0
@@ -4076,7 +3968,7 @@ GameObject:
   - 95: {fileID: 677168073}
   m_Layer: 0
   m_Name: room 5
-  m_TagString: Untagged
+  m_TagString: Room5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4128,7 +4020,7 @@ GameObject:
   - 23: {fileID: 708004078}
   m_Layer: 0
   m_Name: pad4a
-  m_TagString: Untagged
+  m_TagString: Room4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4183,7 +4075,7 @@ GameObject:
   - 95: {fileID: 758963355}
   m_Layer: 0
   m_Name: room 2
-  m_TagString: Untagged
+  m_TagString: Room2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4237,7 +4129,7 @@ GameObject:
   - 114: {fileID: 760182034}
   m_Layer: 0
   m_Name: portal4b
-  m_TagString: Untagged
+  m_TagString: Room4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4262,9 +4154,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 760182032}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpinDirection: 0
   target: {fileID: 708004077}
 --- !u!23 &760182035
 Renderer:
@@ -4295,7 +4188,7 @@ BoxCollider:
   m_GameObject: {fileID: 760182032}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -4320,7 +4213,7 @@ GameObject:
   - 114: {fileID: 772493564}
   m_Layer: 0
   m_Name: portal8d
-  m_TagString: Untagged
+  m_TagString: Room8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4345,9 +4238,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 772493562}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpinDirection: 0
   target: {fileID: 1880385051}
 --- !u!23 &772493565
 Renderer:
@@ -4378,7 +4272,7 @@ BoxCollider:
   m_GameObject: {fileID: 772493562}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -4400,10 +4294,9 @@ GameObject:
   - 33: {fileID: 793952891}
   - 65: {fileID: 793952890}
   - 23: {fileID: 793952889}
-  - 114: {fileID: 793952888}
   m_Layer: 0
   m_Name: portal8f
-  m_TagString: Untagged
+  m_TagString: Room8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4420,18 +4313,6 @@ Transform:
   m_Children:
   - {fileID: 1327094622}
   m_Father: {fileID: 1957295889}
---- !u!114 &793952888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 793952886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 641597194}
 --- !u!23 &793952889
 Renderer:
   m_ObjectHideFlags: 0
@@ -4461,7 +4342,7 @@ BoxCollider:
   m_GameObject: {fileID: 793952886}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -4486,7 +4367,7 @@ GameObject:
   - 114: {fileID: 796221308}
   m_Layer: 0
   m_Name: portal1b
-  m_TagString: Untagged
+  m_TagString: Room1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4511,10 +4392,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 796221306}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 079e6c01f3b61ff47b2b3a78f1fea0ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpinDirection: 1
+  SpinDirection: 2
   target: {fileID: 834868497}
 --- !u!23 &796221309
 Renderer:
@@ -4568,7 +4449,7 @@ GameObject:
   - 23: {fileID: 816731537}
   m_Layer: 0
   m_Name: pad6g
-  m_TagString: Untagged
+  m_TagString: Room6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4624,7 +4505,7 @@ GameObject:
   - 23: {fileID: 828911974}
   m_Layer: 0
   m_Name: pad2e
-  m_TagString: Untagged
+  m_TagString: Room2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4636,7 +4517,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 828911972}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: -1, y: 0, z: 0}
+  m_LocalPosition: {x: -2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1863511238}
@@ -4682,7 +4563,7 @@ GameObject:
   - 114: {fileID: 832552530}
   m_Layer: 0
   m_Name: portal8b
-  m_TagString: Untagged
+  m_TagString: Room8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4707,9 +4588,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 832552528}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpinDirection: 0
   target: {fileID: 1900944326}
 --- !u!23 &832552531
 Renderer:
@@ -4740,7 +4622,7 @@ BoxCollider:
   m_GameObject: {fileID: 832552528}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -4763,7 +4645,7 @@ GameObject:
   - 23: {fileID: 834868498}
   m_Layer: 0
   m_Name: pad7c
-  m_TagString: Untagged
+  m_TagString: Room7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4775,7 +4657,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 834868496}
   m_LocalRotation: {x: .707106829, y: -3.09086232e-08, z: -.707106829, w: -3.09086232e-08}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 668360870}
@@ -4819,7 +4701,7 @@ GameObject:
   - 23: {fileID: 836483042}
   m_Layer: 0
   m_Name: pad5b
-  m_TagString: Untagged
+  m_TagString: Room5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4874,10 +4756,9 @@ GameObject:
   - 33: {fileID: 858175407}
   - 65: {fileID: 858175406}
   - 23: {fileID: 858175405}
-  - 114: {fileID: 858175404}
   m_Layer: 0
   m_Name: portal4e
-  m_TagString: Untagged
+  m_TagString: Room4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4894,18 +4775,6 @@ Transform:
   m_Children:
   - {fileID: 203482149}
   m_Father: {fileID: 1345768958}
---- !u!114 &858175404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 858175402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1948874053}
 --- !u!23 &858175405
 Renderer:
   m_ObjectHideFlags: 0
@@ -4935,7 +4804,7 @@ BoxCollider:
   m_GameObject: {fileID: 858175402}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -4957,10 +4826,9 @@ GameObject:
   - 33: {fileID: 873484733}
   - 65: {fileID: 873484732}
   - 23: {fileID: 873484731}
-  - 114: {fileID: 873484730}
   m_Layer: 0
   m_Name: portal3h
-  m_TagString: Untagged
+  m_TagString: Room3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4977,18 +4845,6 @@ Transform:
   m_Children:
   - {fileID: 889587110}
   m_Father: {fileID: 308321619}
---- !u!114 &873484730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 873484728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!23 &873484731
 Renderer:
   m_ObjectHideFlags: 0
@@ -5018,7 +4874,7 @@ BoxCollider:
   m_GameObject: {fileID: 873484728}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -5040,10 +4896,9 @@ GameObject:
   - 33: {fileID: 876529254}
   - 65: {fileID: 876529253}
   - 23: {fileID: 876529252}
-  - 114: {fileID: 876529251}
   m_Layer: 0
   m_Name: portal2f
-  m_TagString: Untagged
+  m_TagString: Room2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5060,18 +4915,6 @@ Transform:
   m_Children:
   - {fileID: 1193013456}
   m_Father: {fileID: 758963354}
---- !u!114 &876529251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 876529249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 828911973}
 --- !u!23 &876529252
 Renderer:
   m_ObjectHideFlags: 0
@@ -5101,7 +4944,7 @@ BoxCollider:
   m_GameObject: {fileID: 876529249}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -5126,7 +4969,7 @@ GameObject:
   - 114: {fileID: 882558656}
   m_Layer: 0
   m_Name: portal5f
-  m_TagString: Untagged
+  m_TagString: Room5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5151,10 +4994,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 882558654}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1367904904}
+  SpinDirection: 0
+  target: {fileID: 0}
 --- !u!23 &882558657
 Renderer:
   m_ObjectHideFlags: 0
@@ -5184,7 +5028,7 @@ BoxCollider:
   m_GameObject: {fileID: 882558654}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -5207,7 +5051,7 @@ GameObject:
   - 23: {fileID: 889587111}
   m_Layer: 0
   m_Name: pad3h
-  m_TagString: Untagged
+  m_TagString: Room3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5263,7 +5107,7 @@ GameObject:
   - 23: {fileID: 893160041}
   m_Layer: 0
   m_Name: pad3g
-  m_TagString: Untagged
+  m_TagString: Room3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5321,7 +5165,7 @@ GameObject:
   - 108: {fileID: 926162809}
   m_Layer: 0
   m_Name: default6
-  m_TagString: Untagged
+  m_TagString: Room6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5501,7 +5345,7 @@ GameObject:
   - 114: {fileID: 956011118}
   m_Layer: 0
   m_Name: portal2b
-  m_TagString: Untagged
+  m_TagString: Room2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5526,9 +5370,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 956011116}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpinDirection: 0
   target: {fileID: 290536681}
 --- !u!23 &956011119
 Renderer:
@@ -5559,7 +5404,7 @@ BoxCollider:
   m_GameObject: {fileID: 956011116}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -5582,7 +5427,7 @@ GameObject:
   - 23: {fileID: 958293584}
   m_Layer: 0
   m_Name: pad6c
-  m_TagString: Untagged
+  m_TagString: Room6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5638,7 +5483,7 @@ GameObject:
   - 23: {fileID: 961479494}
   m_Layer: 0
   m_Name: pad1g
-  m_TagString: Untagged
+  m_TagString: Room1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5650,7 +5495,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 961479492}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1845844867}
@@ -5693,10 +5538,9 @@ GameObject:
   - 33: {fileID: 963475632}
   - 65: {fileID: 963475631}
   - 23: {fileID: 963475630}
-  - 114: {fileID: 963475629}
   m_Layer: 0
   m_Name: portal3f
-  m_TagString: Untagged
+  m_TagString: Room3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5713,18 +5557,6 @@ Transform:
   m_Children:
   - {fileID: 133745492}
   m_Father: {fileID: 308321619}
---- !u!114 &963475629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 963475627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 322740189}
 --- !u!23 &963475630
 Renderer:
   m_ObjectHideFlags: 0
@@ -5754,7 +5586,7 @@ BoxCollider:
   m_GameObject: {fileID: 963475627}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -5779,7 +5611,7 @@ GameObject:
   - 114: {fileID: 981847260}
   m_Layer: 0
   m_Name: portal5b
-  m_TagString: Untagged
+  m_TagString: Room5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5804,9 +5636,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 981847258}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpinDirection: 0
   target: {fileID: 1604646461}
 --- !u!23 &981847261
 Renderer:
@@ -5837,7 +5670,7 @@ BoxCollider:
   m_GameObject: {fileID: 981847258}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -5859,10 +5692,9 @@ GameObject:
   - 33: {fileID: 1010812006}
   - 65: {fileID: 1010812005}
   - 23: {fileID: 1010812004}
-  - 114: {fileID: 1010812003}
   m_Layer: 0
   m_Name: portal6e
-  m_TagString: Untagged
+  m_TagString: Room6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5879,18 +5711,6 @@ Transform:
   m_Children:
   - {fileID: 1089257731}
   m_Father: {fileID: 288602749}
---- !u!114 &1010812003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1010812001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 36499174}
 --- !u!23 &1010812004
 Renderer:
   m_ObjectHideFlags: 0
@@ -5920,7 +5740,7 @@ BoxCollider:
   m_GameObject: {fileID: 1010812001}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -5945,7 +5765,7 @@ GameObject:
   - 114: {fileID: 1016469878}
   m_Layer: 0
   m_Name: portal3d
-  m_TagString: Untagged
+  m_TagString: Room3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5968,9 +5788,9 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1016469876}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 079e6c01f3b61ff47b2b3a78f1fea0ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SpinDirection: 1
@@ -6004,7 +5824,7 @@ BoxCollider:
   m_GameObject: {fileID: 1016469876}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -6027,7 +5847,7 @@ GameObject:
   - 23: {fileID: 1031743796}
   m_Layer: 0
   m_Name: pad1h
-  m_TagString: Untagged
+  m_TagString: Room1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6039,7 +5859,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031743794}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: -1, y: 0, z: 0}
+  m_LocalPosition: {x: -2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1263734929}
@@ -6085,7 +5905,7 @@ GameObject:
   - 108: {fileID: 1049464181}
   m_Layer: 0
   m_Name: default8
-  m_TagString: Untagged
+  m_TagString: Room8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6191,7 +6011,7 @@ GameObject:
   - 23: {fileID: 1049834065}
   m_Layer: 0
   m_Name: pad7f
-  m_TagString: Untagged
+  m_TagString: Room7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6203,7 +6023,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1049834063}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 211001416}
@@ -6247,7 +6067,7 @@ GameObject:
   - 23: {fileID: 1076592827}
   m_Layer: 0
   m_Name: pad8h
-  m_TagString: Untagged
+  m_TagString: Room8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6303,7 +6123,7 @@ GameObject:
   - 23: {fileID: 1089257732}
   m_Layer: 0
   m_Name: pad6e
-  m_TagString: Untagged
+  m_TagString: Room6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6359,7 +6179,7 @@ GameObject:
   - 23: {fileID: 1095220849}
   m_Layer: 0
   m_Name: pad4c
-  m_TagString: Untagged
+  m_TagString: Room4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6471,7 +6291,7 @@ GameObject:
   - 23: {fileID: 1104179037}
   m_Layer: 0
   m_Name: pad3b
-  m_TagString: Untagged
+  m_TagString: Room3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6527,7 +6347,7 @@ GameObject:
   - 23: {fileID: 1105432181}
   m_Layer: 0
   m_Name: pad2h
-  m_TagString: Untagged
+  m_TagString: Room2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6539,7 +6359,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1105432179}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: -1, y: 0, z: 0}
+  m_LocalPosition: {x: -2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1746046173}
@@ -6585,7 +6405,7 @@ GameObject:
   - 108: {fileID: 1124557574}
   m_Layer: 0
   m_Name: default5
-  m_TagString: Untagged
+  m_TagString: Room5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6691,7 +6511,7 @@ GameObject:
   - 23: {fileID: 1135324184}
   m_Layer: 0
   m_Name: pad1e
-  m_TagString: Untagged
+  m_TagString: Room1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6703,7 +6523,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1135324182}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: -1, y: 0, z: 0}
+  m_LocalPosition: {x: -2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 286626516}
@@ -6746,26 +6566,13 @@ GameObject:
   - 33: {fileID: 1138608967}
   - 65: {fileID: 1138608966}
   - 23: {fileID: 1138608965}
-  - 114: {fileID: 1138608964}
   m_Layer: 0
   m_Name: portal3e
-  m_TagString: Untagged
+  m_TagString: Room3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1138608964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1138608963}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 133745492}
 --- !u!23 &1138608965
 Renderer:
   m_ObjectHideFlags: 0
@@ -6795,7 +6602,7 @@ BoxCollider:
   m_GameObject: {fileID: 1138608963}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -6832,7 +6639,7 @@ GameObject:
   - 114: {fileID: 1164112173}
   m_Layer: 0
   m_Name: portal6d
-  m_TagString: Untagged
+  m_TagString: Room6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6857,9 +6664,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1164112171}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpinDirection: 0
   target: {fileID: 0}
 --- !u!23 &1164112174
 Renderer:
@@ -6890,7 +6698,7 @@ BoxCollider:
   m_GameObject: {fileID: 1164112171}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -6915,7 +6723,7 @@ GameObject:
   - 114: {fileID: 1173589662}
   m_Layer: 0
   m_Name: portal7b
-  m_TagString: Untagged
+  m_TagString: Room7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6940,10 +6748,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1173589660}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 447346936}
+  SpinDirection: 0
+  target: {fileID: 0}
 --- !u!23 &1173589663
 Renderer:
   m_ObjectHideFlags: 0
@@ -6973,7 +6782,7 @@ BoxCollider:
   m_GameObject: {fileID: 1173589660}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -6996,7 +6805,7 @@ GameObject:
   - 23: {fileID: 1193013457}
   m_Layer: 0
   m_Name: pad2f
-  m_TagString: Untagged
+  m_TagString: Room2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7008,7 +6817,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1193013455}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 876529250}
@@ -7051,10 +6860,9 @@ GameObject:
   - 33: {fileID: 1223820490}
   - 65: {fileID: 1223820489}
   - 23: {fileID: 1223820488}
-  - 114: {fileID: 1223820487}
   m_Layer: 0
   m_Name: portal8e
-  m_TagString: Untagged
+  m_TagString: Room8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7071,18 +6879,6 @@ Transform:
   m_Children:
   - {fileID: 641597194}
   m_Father: {fileID: 1957295889}
---- !u!114 &1223820487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1223820485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1327094622}
 --- !u!23 &1223820488
 Renderer:
   m_ObjectHideFlags: 0
@@ -7112,7 +6908,7 @@ BoxCollider:
   m_GameObject: {fileID: 1223820485}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -7135,7 +6931,7 @@ GameObject:
   - 23: {fileID: 1243444234}
   m_Layer: 0
   m_Name: pad5h
-  m_TagString: Untagged
+  m_TagString: Room5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7190,10 +6986,9 @@ GameObject:
   - 33: {fileID: 1253328383}
   - 65: {fileID: 1253328382}
   - 23: {fileID: 1253328381}
-  - 114: {fileID: 1253328380}
   m_Layer: 0
   m_Name: portal7g
-  m_TagString: Untagged
+  m_TagString: Room7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7210,18 +7005,6 @@ Transform:
   m_Children:
   - {fileID: 229580641}
   m_Father: {fileID: 1964267858}
---- !u!114 &1253328380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1253328378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!23 &1253328381
 Renderer:
   m_ObjectHideFlags: 0
@@ -7251,7 +7034,7 @@ BoxCollider:
   m_GameObject: {fileID: 1253328378}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -7273,10 +7056,9 @@ GameObject:
   - 33: {fileID: 1263734933}
   - 65: {fileID: 1263734932}
   - 23: {fileID: 1263734931}
-  - 114: {fileID: 1263734930}
   m_Layer: 0
   m_Name: portal1h
-  m_TagString: Untagged
+  m_TagString: Room1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7293,18 +7075,6 @@ Transform:
   m_Children:
   - {fileID: 1031743795}
   m_Father: {fileID: 119568535}
---- !u!114 &1263734930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1263734928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!23 &1263734931
 Renderer:
   m_ObjectHideFlags: 0
@@ -7359,7 +7129,7 @@ GameObject:
   - 114: {fileID: 1264161112}
   m_Layer: 0
   m_Name: portal5d
-  m_TagString: Untagged
+  m_TagString: Room5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7384,9 +7154,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1264161110}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpinDirection: 0
   target: {fileID: 0}
 --- !u!23 &1264161113
 Renderer:
@@ -7417,7 +7188,7 @@ BoxCollider:
   m_GameObject: {fileID: 1264161110}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -7442,7 +7213,7 @@ GameObject:
   - 114: {fileID: 1277960597}
   m_Layer: 0
   m_Name: portal6h
-  m_TagString: Untagged
+  m_TagString: Room6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7500,7 +7271,7 @@ BoxCollider:
   m_GameObject: {fileID: 1277960595}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -7523,7 +7294,7 @@ GameObject:
   - 23: {fileID: 1327094623}
   m_Layer: 0
   m_Name: pad8f
-  m_TagString: Untagged
+  m_TagString: Room8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7578,7 +7349,7 @@ GameObject:
   - 95: {fileID: 1345768957}
   m_Layer: 0
   m_Name: room 4
-  m_TagString: Untagged
+  m_TagString: Room4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7630,7 +7401,7 @@ GameObject:
   - 23: {fileID: 1352454455}
   m_Layer: 0
   m_Name: pad5d
-  m_TagString: Untagged
+  m_TagString: Room5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7686,7 +7457,7 @@ GameObject:
   - 23: {fileID: 1367904905}
   m_Layer: 0
   m_Name: pad5e
-  m_TagString: Untagged
+  m_TagString: Room5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7742,7 +7513,7 @@ GameObject:
   - 23: {fileID: 1371277828}
   m_Layer: 0
   m_Name: pad3c
-  m_TagString: Untagged
+  m_TagString: Room3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7797,10 +7568,9 @@ GameObject:
   - 33: {fileID: 1378642179}
   - 65: {fileID: 1378642178}
   - 23: {fileID: 1378642177}
-  - 114: {fileID: 1378642176}
   m_Layer: 0
   m_Name: portal4f
-  m_TagString: Untagged
+  m_TagString: Room4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7817,18 +7587,6 @@ Transform:
   m_Children:
   - {fileID: 1948874053}
   m_Father: {fileID: 1345768958}
---- !u!114 &1378642176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1378642174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 203482149}
 --- !u!23 &1378642177
 Renderer:
   m_ObjectHideFlags: 0
@@ -7858,7 +7616,7 @@ BoxCollider:
   m_GameObject: {fileID: 1378642174}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -7883,7 +7641,7 @@ GameObject:
   - 114: {fileID: 1380914996}
   m_Layer: 0
   m_Name: portal7a
-  m_TagString: Untagged
+  m_TagString: Room7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7908,7 +7666,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1380914994}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 079e6c01f3b61ff47b2b3a78f1fea0ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SpinDirection: 1
@@ -7942,7 +7700,7 @@ BoxCollider:
   m_GameObject: {fileID: 1380914994}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -7965,7 +7723,7 @@ GameObject:
   - 23: {fileID: 1390664212}
   m_Layer: 0
   m_Name: pad8g
-  m_TagString: Untagged
+  m_TagString: Room8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8023,7 +7781,7 @@ GameObject:
   - 114: {fileID: 1398714033}
   m_Layer: 0
   m_Name: portal4a
-  m_TagString: Untagged
+  m_TagString: Room4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8048,9 +7806,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1398714031}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpinDirection: 0
   target: {fileID: 462242444}
 --- !u!23 &1398714034
 Renderer:
@@ -8081,7 +7840,7 @@ BoxCollider:
   m_GameObject: {fileID: 1398714031}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -8104,7 +7863,7 @@ GameObject:
   - 23: {fileID: 1489877804}
   m_Layer: 0
   m_Name: pad8c
-  m_TagString: Untagged
+  m_TagString: Room8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8160,7 +7919,7 @@ GameObject:
   - 23: {fileID: 1501468867}
   m_Layer: 0
   m_Name: pad3a
-  m_TagString: Untagged
+  m_TagString: Room3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8218,7 +7977,7 @@ GameObject:
   - 114: {fileID: 1504223076}
   m_Layer: 0
   m_Name: portal8a
-  m_TagString: Untagged
+  m_TagString: Room8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8241,9 +8000,9 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1504223074}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 079e6c01f3b61ff47b2b3a78f1fea0ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SpinDirection: 0
@@ -8254,7 +8013,7 @@ Renderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1504223074}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
@@ -8277,7 +8036,7 @@ BoxCollider:
   m_GameObject: {fileID: 1504223074}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -8300,7 +8059,7 @@ GameObject:
   - 23: {fileID: 1514257398}
   m_Layer: 0
   m_Name: pad2a
-  m_TagString: Untagged
+  m_TagString: Room2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8312,7 +8071,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1514257396}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: -1, y: 0, z: 0}
+  m_LocalPosition: {x: -2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 506349404}
@@ -8356,7 +8115,7 @@ GameObject:
   - 23: {fileID: 1517326460}
   m_Layer: 0
   m_Name: pad8a
-  m_TagString: Untagged
+  m_TagString: Room8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8411,10 +8170,9 @@ GameObject:
   - 33: {fileID: 1523064059}
   - 65: {fileID: 1523064058}
   - 23: {fileID: 1523064057}
-  - 114: {fileID: 1523064056}
   m_Layer: 0
   m_Name: portal7h
-  m_TagString: Untagged
+  m_TagString: Room7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8431,18 +8189,6 @@ Transform:
   m_Children:
   - {fileID: 2112728071}
   m_Father: {fileID: 1964267858}
---- !u!114 &1523064056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1523064054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!23 &1523064057
 Renderer:
   m_ObjectHideFlags: 0
@@ -8472,7 +8218,7 @@ BoxCollider:
   m_GameObject: {fileID: 1523064054}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -8495,7 +8241,7 @@ GameObject:
   - 23: {fileID: 1557978148}
   m_Layer: 0
   m_Name: pad5f
-  m_TagString: Untagged
+  m_TagString: Room5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8607,7 +8353,7 @@ GameObject:
   - 23: {fileID: 1566118280}
   m_Layer: 0
   m_Name: pad2c
-  m_TagString: Untagged
+  m_TagString: Room2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8619,7 +8365,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1566118278}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1818391859}
@@ -8662,10 +8408,9 @@ GameObject:
   - 33: {fileID: 1566704021}
   - 65: {fileID: 1566704020}
   - 23: {fileID: 1566704019}
-  - 114: {fileID: 1566704018}
   m_Layer: 0
   m_Name: portal4h
-  m_TagString: Untagged
+  m_TagString: Room4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8682,18 +8427,6 @@ Transform:
   m_Children:
   - {fileID: 1741242955}
   m_Father: {fileID: 1345768958}
---- !u!114 &1566704018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1566704016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!23 &1566704019
 Renderer:
   m_ObjectHideFlags: 0
@@ -8723,7 +8456,7 @@ BoxCollider:
   m_GameObject: {fileID: 1566704016}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -8748,7 +8481,7 @@ GameObject:
   - 114: {fileID: 1568389449}
   m_Layer: 0
   m_Name: portal5h
-  m_TagString: Untagged
+  m_TagString: Room5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8773,9 +8506,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1568389447}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpinDirection: 0
   target: {fileID: 0}
 --- !u!23 &1568389450
 Renderer:
@@ -8806,7 +8540,7 @@ BoxCollider:
   m_GameObject: {fileID: 1568389447}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -8829,7 +8563,7 @@ GameObject:
   - 23: {fileID: 1590833158}
   m_Layer: 0
   m_Name: pad4g
-  m_TagString: Untagged
+  m_TagString: Room4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8885,7 +8619,7 @@ GameObject:
   - 23: {fileID: 1604646462}
   m_Layer: 0
   m_Name: pad5a
-  m_TagString: Untagged
+  m_TagString: Room5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9049,7 +8783,7 @@ GameObject:
   - 23: {fileID: 1653407583}
   m_Layer: 0
   m_Name: pad3d
-  m_TagString: Untagged
+  m_TagString: Room3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9107,7 +8841,7 @@ GameObject:
   - 114: {fileID: 1689488690}
   m_Layer: 0
   m_Name: portal1a
-  m_TagString: Untagged
+  m_TagString: Room1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9120,9 +8854,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1689488689}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpinDirection: 0
   target: {fileID: 1566118279}
 --- !u!23 &1689488691
 Renderer:
@@ -9190,7 +8925,7 @@ GameObject:
   - 114: {fileID: 1713126619}
   m_Layer: 0
   m_Name: portal1d
-  m_TagString: Untagged
+  m_TagString: Room1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9213,9 +8948,9 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1713126617}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 079e6c01f3b61ff47b2b3a78f1fea0ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SpinDirection: 0
@@ -9272,7 +9007,7 @@ GameObject:
   - 23: {fileID: 1730340147}
   m_Layer: 0
   m_Name: pad5c
-  m_TagString: Untagged
+  m_TagString: Room5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9330,7 +9065,7 @@ GameObject:
   - 108: {fileID: 1733838135}
   m_Layer: 0
   m_Name: default7
-  m_TagString: Untagged
+  m_TagString: Room7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9436,7 +9171,7 @@ GameObject:
   - 23: {fileID: 1741242956}
   m_Layer: 0
   m_Name: pad4h
-  m_TagString: Untagged
+  m_TagString: Room4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9491,10 +9226,9 @@ GameObject:
   - 33: {fileID: 1746046177}
   - 65: {fileID: 1746046176}
   - 23: {fileID: 1746046175}
-  - 114: {fileID: 1746046174}
   m_Layer: 0
   m_Name: portal2h
-  m_TagString: Untagged
+  m_TagString: Room2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9511,18 +9245,6 @@ Transform:
   m_Children:
   - {fileID: 1105432180}
   m_Father: {fileID: 758963354}
---- !u!114 &1746046174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1746046172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!23 &1746046175
 Renderer:
   m_ObjectHideFlags: 0
@@ -9552,7 +9274,7 @@ BoxCollider:
   m_GameObject: {fileID: 1746046172}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -9577,7 +9299,7 @@ GameObject:
   - 108: {fileID: 1786865313}
   m_Layer: 0
   m_Name: default2
-  m_TagString: Untagged
+  m_TagString: Room2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9685,7 +9407,7 @@ GameObject:
   - 114: {fileID: 1797727217}
   m_Layer: 0
   m_Name: portal5g
-  m_TagString: Untagged
+  m_TagString: Room5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9710,10 +9432,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1797727215}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  SpinDirection: 3
+  target: {fileID: 669257058}
 --- !u!23 &1797727218
 Renderer:
   m_ObjectHideFlags: 0
@@ -9743,7 +9466,7 @@ BoxCollider:
   m_GameObject: {fileID: 1797727215}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -9765,10 +9488,9 @@ GameObject:
   - 33: {fileID: 1804537830}
   - 65: {fileID: 1804537829}
   - 23: {fileID: 1804537828}
-  - 114: {fileID: 1804537827}
   m_Layer: 0
   m_Name: portal7e
-  m_TagString: Untagged
+  m_TagString: Room7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9785,18 +9507,6 @@ Transform:
   m_Children:
   - {fileID: 61623722}
   m_Father: {fileID: 1964267858}
---- !u!114 &1804537827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1804537825}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1049834064}
 --- !u!23 &1804537828
 Renderer:
   m_ObjectHideFlags: 0
@@ -9826,7 +9536,7 @@ BoxCollider:
   m_GameObject: {fileID: 1804537825}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -9851,7 +9561,7 @@ GameObject:
   - 108: {fileID: 1807014491}
   m_Layer: 0
   m_Name: default4
-  m_TagString: Untagged
+  m_TagString: Room4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9957,7 +9667,7 @@ GameObject:
   - 23: {fileID: 1813335833}
   m_Layer: 0
   m_Name: pad7a
-  m_TagString: Untagged
+  m_TagString: Room7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9969,7 +9679,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1813335831}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: -1, y: 0, z: 0}
+  m_LocalPosition: {x: -2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1380914995}
@@ -10015,7 +9725,7 @@ GameObject:
   - 114: {fileID: 1818391860}
   m_Layer: 0
   m_Name: portal2c
-  m_TagString: Untagged
+  m_TagString: Room2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10040,9 +9750,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1818391858}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpinDirection: 0
   target: {fileID: 502465786}
 --- !u!23 &1818391861
 Renderer:
@@ -10073,7 +9784,7 @@ BoxCollider:
   m_GameObject: {fileID: 1818391858}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -10095,10 +9806,9 @@ GameObject:
   - 33: {fileID: 1845844871}
   - 65: {fileID: 1845844870}
   - 23: {fileID: 1845844869}
-  - 114: {fileID: 1845844868}
   m_Layer: 0
   m_Name: portal1g
-  m_TagString: Untagged
+  m_TagString: Room1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10115,18 +9825,6 @@ Transform:
   m_Children:
   - {fileID: 961479493}
   m_Father: {fileID: 119568535}
---- !u!114 &1845844868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1845844866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!23 &1845844869
 Renderer:
   m_ObjectHideFlags: 0
@@ -10178,10 +9876,9 @@ GameObject:
   - 33: {fileID: 1863511242}
   - 65: {fileID: 1863511241}
   - 23: {fileID: 1863511240}
-  - 114: {fileID: 1863511239}
   m_Layer: 0
   m_Name: portal2e
-  m_TagString: Untagged
+  m_TagString: Room2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10198,18 +9895,6 @@ Transform:
   m_Children:
   - {fileID: 828911973}
   m_Father: {fileID: 758963354}
---- !u!114 &1863511239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1863511237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1193013456}
 --- !u!23 &1863511240
 Renderer:
   m_ObjectHideFlags: 0
@@ -10239,7 +9924,7 @@ BoxCollider:
   m_GameObject: {fileID: 1863511237}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -10261,10 +9946,9 @@ GameObject:
   - 33: {fileID: 1873940641}
   - 65: {fileID: 1873940640}
   - 23: {fileID: 1873940639}
-  - 114: {fileID: 1873940638}
   m_Layer: 0
   m_Name: portal6f
-  m_TagString: Untagged
+  m_TagString: Room6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10281,18 +9965,6 @@ Transform:
   m_Children:
   - {fileID: 36499174}
   m_Father: {fileID: 288602749}
---- !u!114 &1873940638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1873940636}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1089257731}
 --- !u!23 &1873940639
 Renderer:
   m_ObjectHideFlags: 0
@@ -10322,7 +9994,7 @@ BoxCollider:
   m_GameObject: {fileID: 1873940636}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -10345,7 +10017,7 @@ GameObject:
   - 23: {fileID: 1880385052}
   m_Layer: 0
   m_Name: pad7b
-  m_TagString: Untagged
+  m_TagString: Room7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10357,7 +10029,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1880385050}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1173589661}
@@ -10401,7 +10073,7 @@ GameObject:
   - 23: {fileID: 1900944327}
   m_Layer: 0
   m_Name: pad2d
-  m_TagString: Untagged
+  m_TagString: Room2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10413,7 +10085,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1900944325}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: -1, y: 0, z: 0}
+  m_LocalPosition: {x: -2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 82167304}
@@ -10457,7 +10129,7 @@ GameObject:
   - 23: {fileID: 1910996094}
   m_Layer: 0
   m_Name: pad2b
-  m_TagString: Untagged
+  m_TagString: Room2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10469,7 +10141,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1910996092}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 956011117}
@@ -10569,7 +10241,7 @@ GameObject:
   - 23: {fileID: 1948874054}
   m_Layer: 0
   m_Name: pad4f
-  m_TagString: Untagged
+  m_TagString: Room4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10624,7 +10296,7 @@ GameObject:
   - 95: {fileID: 1957295890}
   m_Layer: 0
   m_Name: room 8
-  m_TagString: Untagged
+  m_TagString: Room8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10675,7 +10347,7 @@ GameObject:
   - 95: {fileID: 1964267859}
   m_Layer: 0
   m_Name: room 7
-  m_TagString: Untagged
+  m_TagString: Room7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10727,7 +10399,7 @@ GameObject:
   - 23: {fileID: 1998988445}
   m_Layer: 0
   m_Name: pad5g
-  m_TagString: Untagged
+  m_TagString: Room5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10782,10 +10454,9 @@ GameObject:
   - 33: {fileID: 2010406702}
   - 65: {fileID: 2010406701}
   - 23: {fileID: 2010406700}
-  - 114: {fileID: 2010406699}
   m_Layer: 0
   m_Name: portal6g
-  m_TagString: Untagged
+  m_TagString: Room6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10802,18 +10473,6 @@ Transform:
   m_Children:
   - {fileID: 816731536}
   m_Father: {fileID: 288602749}
---- !u!114 &2010406699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2010406697}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!23 &2010406700
 Renderer:
   m_ObjectHideFlags: 0
@@ -10843,7 +10502,7 @@ BoxCollider:
   m_GameObject: {fileID: 2010406697}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -10868,7 +10527,7 @@ GameObject:
   - 114: {fileID: 2028850733}
   m_Layer: 0
   m_Name: portal6b
-  m_TagString: Untagged
+  m_TagString: Room6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10893,9 +10552,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2028850731}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpinDirection: 0
   target: {fileID: 56814339}
 --- !u!23 &2028850734
 Renderer:
@@ -10926,7 +10586,7 @@ BoxCollider:
   m_GameObject: {fileID: 2028850731}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -11011,7 +10671,7 @@ GameObject:
   - 23: {fileID: 2093346329}
   m_Layer: 0
   m_Name: pad6d
-  m_TagString: Untagged
+  m_TagString: Room6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11069,7 +10729,7 @@ GameObject:
   - 114: {fileID: 2107028117}
   m_Layer: 0
   m_Name: portal4c
-  m_TagString: Untagged
+  m_TagString: Room4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11094,9 +10754,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2107028115}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a104a3721e21e564ba308816d8fd2114, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae6f9352cbd5664d89d2d1897f33fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpinDirection: 0
   target: {fileID: 0}
 --- !u!23 &2107028118
 Renderer:
@@ -11127,7 +10788,7 @@ BoxCollider:
   m_GameObject: {fileID: 2107028115}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -11150,7 +10811,7 @@ GameObject:
   - 23: {fileID: 2112728072}
   m_Layer: 0
   m_Name: pad7h
-  m_TagString: Untagged
+  m_TagString: Room7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11162,7 +10823,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2112728070}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: -1, y: 0, z: 0}
+  m_LocalPosition: {x: -2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1523064055}

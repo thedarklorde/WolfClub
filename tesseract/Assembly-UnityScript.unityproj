@@ -46,10 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\NewBehaviourScript.js" />
+     <Compile Include="Assets\door.js" />
+     <Compile Include="Assets\flip.js" />
      <Compile Include="Assets\gravity.js" />
      <Compile Include="Assets\teleport.js" />
-     <Compile Include="Assets\twist.js" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">

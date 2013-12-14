@@ -47,9 +47,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\door.js" />
-     <Compile Include="Assets\flip.js" />
-     <Compile Include="Assets\gravity.js" />
-     <Compile Include="Assets\teleport.js" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">

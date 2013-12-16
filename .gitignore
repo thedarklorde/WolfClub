@@ -10,6 +10,10 @@ Library/*
 Temp
 *.pidb
 Build
+jasonv/flatland/Library
+jasonv/flatland/Library/*
+jasonv/flatland/Temp
+jasonv/flatland/Build
 
 #################
 ## Eclipse
